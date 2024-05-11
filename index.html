@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>マップアプリ(Web API活用)</title>
+  <script src="https://www.bing.com/api/maps/mapcontrol?key=As9A4gB4JEOrJjHl6nq84lsNltpywnNg0E_0ZYbMQpBmLoYDhPpMuRgIt99ZFonT&callback=GetMap" async defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="./css/output.css">
+
+</head>
+<body class="text-gray-600 bg-gray-50">
+
+  <div id="wap" class="bg-white mx-auto p-4 md:p-8 md:max-w-screen-md">
+
+    <div class="flex flex-wrap w-full mb-8">
+      <div class="lg:w-1/2 w-full mb-4 lg:mb-0">
+        <h1 class="sm:text-3xl text-2xl mb-2">令和の殺人事件</h1>
+        <div class="h-1 w-20 bg-gray-500"></div>
+      </div>
+      <p class="lg:w-1/2 w-full">STOP殺人事件！被害に遭わないために過去の事件を知ろう。</p>
+    </div>
+
+    <div id="mapAndInfoContainer">
+    <div id="myMap" class="h-96"></div>
+    <div id="infoContainer"></div>
+  </div>
+
+    <footer class="mx-auto py-8 pb-0">
+      <div class="py-8 pb-0 border-t text-center text-sm text-gray-300">© 2024 - kadai.</div>
+    </footer>
+
+  </div><!-- wap end -->
+
+  <script src="./js/index.js"></script>
+</body>
+</html>
